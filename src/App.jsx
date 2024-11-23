@@ -2,8 +2,9 @@ import Time from './Time';
 
 function App() {
   return (
-    <div className="font-Orbitron text-white">
-      <div className="flex items-center justify-center h-screen" >
+    <div className="relative">
+      <div>
+        <img className="h-screen w-screen" src="../public/john-towner-JgOeRuGD_Y4-unsplash.jpg" alt="Morning Mountains" />
         <Time />
       </div>
     </div>

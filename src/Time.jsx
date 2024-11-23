@@ -19,11 +19,18 @@ function Time() {
   const period = time.getHours() >= 12 ? "PM" : "AM";
 
   return (
-    <div className="font-Orbitron">
-      <p className="text-5xl">
+    <div className="font-Orbitron text-white absolute h-fill w-fill z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+      <p className="text-9xl inline">
         {formatHours(time.getHours())}:
+      </p>
+      <p className="text-9xl inline">
         {time.getMinutes().toString().padStart(2, "0")}:
-        {time.getSeconds().toString().padStart(2, "0")} {period}
+      </p>
+      <p className="text-5xl inline mx-3">
+        {time.getSeconds().toString().padStart(2, "0")} 
+      </p>
+      <p className="text-9xl inline">
+        {period}
       </p>
     </div>
   );
